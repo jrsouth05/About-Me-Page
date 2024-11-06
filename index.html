@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="eng-ca">
+  <head>
+    <title>Week 6: CSS Positioning (Demo 1)</title>
+    <meta charset="utf-8">
+    <style>
+      html {
+        font-family: "Helvetica Neu", "arial", sans-serif;
+        font-size: 36px;
+        text-align: center;
+        color: white;
+      }
+
+      body {
+        background-color: #FFFDF7;
+      }
+
+      header {
+        background-color: yellow;
+        color: black;
+      }
+
+      #content {
+        width: 40%;
+        display: block;
+        float: left;
+        clear: right;
+        background-color: black;
+      }
+
+      .fullwidth {
+        width: 100%;
+        display: block;
+        float: left;
+        clear: right;
+        margin: auto;
+        margin-top: 2em;
+        height: 580px;
+      }
+
+     
+      .above-grey-boxes {
+        width: 95%;
+        margin-top: 10px;
+        background-color: lightblue;
+        height: 50px; 
+        color: black;
+        text-align: center;
+        padding: 20px;
+      }
+
+      .half-blocks {
+        width: 60%;
+        float: left;
+        margin-top: 1.5em;
+      }
+
+      .half-block {
+        width: 45%; 
+        float: left; 
+        margin: 13px; 
+        background-color: #ECE9E3;
+        height: 7em;
+      }
+
+      #right-block {
+        width: 56%;
+        float: left;
+        background-color: lightgreen;
+        margin: 5px;
+        height: 215px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <header>
+      Morbi iaculis id nisl non tincidunt
+    </header>
+    <div id="content">
+      <div class="fullwidth">Cras scelerisque justo</div>
+    </div>
+
+   
+    <div class="above-grey-boxes">This is a 60% div above the grey boxes</div>
+
+    <div class="half-blocks">
+      <div class="half-block">First half block</div>
+      <div class="half-block">Second half block</div>
+    </div>
+
+    <div id="right-block">ABOUT ME AS A DESIGNER</div>
+  </body>
+</html>

@@ -3,23 +3,24 @@
   <head>
     <title>Week 6: CSS Positioning (Demo 1)</title>
     <meta charset="utf-8">
+    
+    <!--Header -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Gothic&display=swap" rel="stylesheet">
+  
+  <!--Body font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
     <style>
-      html {
-        font-family: "Helvetica Neu", "arial", sans-serif;
-        font-size: 36px;
-        text-align: center;
-        color: white;
-      }
-
+      
       body {
         background-color: #FFFDF7;
       }
 
-      header {
-        background-color: yellow;
-        color: black;
-      }
-
+  
       #content {
         width: 40%;
         display: block;
@@ -27,7 +28,7 @@
         clear: right;
         background-color: black;
         margin-left: 20px;
-        margin-top: 20px; 
+        margin-top: 20px;
       }
 
       .fullwidth {
@@ -40,33 +41,36 @@
         height: 580px;
       }
 
-     
-      .above-grey-boxes {
+      .aboutmeheader {
         width: 53%;
-        margin-top: 20px;
-        margin-right: 20px; 
-        background-color: lightblue;
-        height: 50px; 
+        height: 50px;
         color: black;
-        text-align: center;
+        text-align: left;
         padding: 20px;
-        float: right; 
+        float: left; 
+        font-family: 'League Gothic', sans-serif;
+        font-size: 70px;
+        margin-top: -15px; 
       }
 
       .half-blocks {
         width: 57%;
         float: left;
         margin-top: 20px;
-        margin-left: 24px
+        margin-left: 24px;
       }
 
       .half-block {
-        width: 48%; 
-        float: left; 
-        margin-right: 10px; 
-        background-color: #ECE9E3;
-        height: 250px;
-      }
+    width: 45%;
+    float: left;
+    margin-right: 10px;
+    background-color: #ECE9E3;
+    height: 270px;
+    padding: 10px;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 15px;
+    font-weight: bold; 
+}
 
       #right-block {
         width: 55%;
@@ -74,30 +78,77 @@
         background-color: lightgreen;
         margin-top: 20px;
         margin-left: 24px;
-        height: 263px;
+        height: 287px;
       }
+
+  
+      .clear {
+        clear: both;
+      }
+      
+      header {
+      width: 100%;
+      position: relative;
+      margin: 0 auto;  
+      text-align: center;  
+      padding: 1px;
+    }
+
+    nav ul {
+      margin: 0;
+      padding: 0;
+      list-style: none; 
+    }
+
+    nav li {
+      display: inline-block; 
+      margin-right: 20px; 
+    }
+
+    nav a {
+      color: black;
+      text-decoration: none;
+      font-family: 'Noto Sans', sans-serif;
+      display: block;
+      text-align: center;
+    }
+
+    nav a:hover,
+    nav a:active {
+      color: #808080; 
+    }
 
     </style>
   </head>
   <body>
+    
     <header>
-      Morbi iaculis id nisl non tincidunt
-    </header>
+    <nav>
+        <ul>
+            <li><a href="/">HOME</a></li>
+            <li><a href="/">ILLUSTRATOR</a></li>
+            <li><a href="/">PHOTOSHOP</a></li>
+            <li><a href="/">ABOUT ME</a></li>
+        </ul>
+    </nav>
+  </header>
+    
+ 
     <div id="content">
       <div class="fullwidth">Cras scelerisque justo</div>
     </div>
-
-   
-    <div class="above-grey-boxes">This is a 60% div above the grey boxes</div>
+    
+  
+    <div class="aboutmeheader">ABOUT ME AS A DESIGNER</div>
 
     <div class="half-blocks">
-      <div class="half-block">First half block</div>
-      <div class="half-block">Second half block</div>
+      <div class="half-block">SOFTWARE SKILLS</div>
+      <div class="half-block">SKILLS</div>
     </div>
 
     <div id="right-block">ABOUT ME AS A DESIGNER</div>
+
+
+    <div class="clear"></div>
   </body>
 </html>
-
-
-

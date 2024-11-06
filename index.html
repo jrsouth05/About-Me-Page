@@ -19,8 +19,12 @@
         background-color: #FFFDF7;
       }
 
+      .container {
+        margin-left: 25px; 
+      }
+
       #content {
-        width: 40%;
+        width: 40%; 
         display: block;
         float: left;
         clear: right;
@@ -31,12 +35,11 @@
 
       .fullwidth {
         width: 100%;
-        display: block;
         float: left;
         clear: right;
         margin: auto;
         margin-top: 2em;
-        height: 580px;
+        height: 660px;
       }
 
       .aboutmeheader {
@@ -91,10 +94,10 @@
       }
       
       .fullwidth img {
-        max-width: 100%; 
-        height: auto; 
-        margin-top: -125px; 
-        margin-left: 20%;
+        max-width: 650px; 
+        height: auto;
+        margin-top: -145px;
+        margin-left:5px;
       }
 
       .clear {
@@ -137,33 +140,36 @@
   <body>
     
     <header>
-    <nav>
+      <nav>
         <ul>
-            <li><a href="/">HOME</a></li>
-            <li><a href="/">ILLUSTRATOR</a></li>
-            <li><a href="/">PHOTOSHOP</a></li>
-            <li><a href="/">ABOUT ME</a></li>
+          <li><a href="/">HOME</a></li>
+          <li><a href="/">ILLUSTRATOR</a></li>
+          <li><a href="/">PHOTOSHOP</a></li>
+          <li><a href="/">ABOUT ME</a></li>
         </ul>
-    </nav>
-  </header>
+      </nav>
+    </header>
     
-    <div id="content">
-      <div class="fullwidth">
-      <img src="face.png" alt="circular portrait">
+    <div class="container">
+      <div id="content">
+        <div class="fullwidth">
+          <img src="face.png" alt="circular portrait">
+        </div>
       </div>
+      
+      <div class="aboutmeheader">ABOUT ME AS A DESIGNER</div>
+
+      <div class="half-blocks">
+        <div class="half-block">SOFTWARE SKILLS
+          <img src="chart.png" alt="skill chart">
+        </div>
+        <div class="half-block">SKILLS</div>
+      </div>
+
+      <div id="right-block">JENNY SOUTH</div>
+
+      <div class="clear"></div>
     </div>
     
-    <div class="aboutmeheader">ABOUT ME AS A DESIGNER</div>
-
-    <div class="half-blocks">
-      <div class="half-block">SOFTWARE SKILLS
-        <img src="chart.png" alt="skill chart">
-      </div>
-      <div class="half-block">SKILLS</div>
-    </div>
-
-    <div id="right-block">JENNY SOUTH</div>
-
-    <div class="clear"></div>
   </body>
 </html>

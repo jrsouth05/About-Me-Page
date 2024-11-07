@@ -5,14 +5,14 @@
     <meta charset="utf-8">
     
     <!--Header -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=League+Gothic&display=swap" rel="stylesheet">
-  
-  <!--Body font-->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Gothic&display=swap" rel="stylesheet">
+    
+    <!--Body font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     
     <style>
       body {
@@ -21,18 +21,20 @@
 
       .container {
         margin-left: 25px; 
-        margin-top: 15px
+        margin-top: 15px;
       }
 
       #content {
-  width: 30%; /* This is the width of the black box */
-  display: block;
-  float: left;
-  clear: right;
-  background-color: black;
-  margin-left: 100px; 
-  margin-top: 20px;
-}
+        width: 30%;
+        display: block;
+        float: left;
+        clear: right;
+        background-color: black;
+        margin-left: 100px; 
+        margin-top: 20px;
+        color: white;
+        padding: 15px;
+      }
 
       .fullwidth {
         width: 100%;
@@ -109,36 +111,34 @@
         max-width: 650px; 
         height: auto;
         margin-top: -145px;
-        margin-left:-115px;
+        margin-left: -115px;
       }
 
       .clear {
         clear: both;
       }
       
-      
-      td, tr{
+      td, tr {
         font-weight: 350; 
         font-size: 13px;
         border: 1.5px solid black;
       }
       
-      th{
+      th {
         border: 1.5px solid black;
       }
       
       table {
-  border-collapse: collapse;
-
-}
+        border-collapse: collapse;
+      }
       
       .bodytext {
-  margin-top: 20px;
-  font-family: 'Noto Sans', sans-serif;
-  font-size: 15px;
-  line-height: 30px;
-  font-weight: 350; 
-}
+        margin-top: 20px;
+        font-family: 'Noto Sans', sans-serif;
+        font-size: 15px;
+        line-height: 30px;
+        font-weight: 350; 
+      }
       
       header {
         width: 100%;
@@ -146,6 +146,16 @@
         margin: 0 auto;  
         text-align: center;  
         padding: 1px;
+      }
+      
+      .attributes{
+        list-style: none;
+        margin-top: -100px;
+        margin-left: 150px;
+        padding: 15;
+        line-height: 65px;
+        font-family: 'League Gothic', sans-serif;
+        font-size: 35px; 
       }
 
       nav ul {
@@ -190,8 +200,17 @@
       <div id="content">
         <div class="fullwidth">
           <img src="face.png" alt="circular portrait">
-        </div>
+          
+         
+          <ul class="attributes">
+          <li>WATERLOO, ONTARIO</li>
+          <li>UNIVERSITY OF WATERLOO</li>
+          <li>JRSOUTH@UWATERLOO.CA</li>
+          <li>(905) 864 5066</li>
+        </ul>
+           
       </div>
+        </div>
       
       <div class="aboutmeheader">ABOUT ME AS A DESIGNER
         <div id="blackline"></div>
@@ -203,8 +222,8 @@
         </div>
         <div class="half-block">
           SKILLS
-          <!-- Insert Table Here -->
-          <table cellpadding="10" cellspacing="0" style="width:100%; margin-top: 20px; ">
+
+          <table cellpadding="10" cellspacing="0" style="width:100%; margin-top: 20px;">
             <tr>
               <th>SKILL</th>
               <th>PROFICIENCY</th>
@@ -227,20 +246,14 @@
             </tr>
           </table>
         </div>
-    
       </div>
 
       <div id="right-block">JENNY SOUTH
-      
         <div class="bodytext">
           Hi! I’m a student designer with a focus on UX/UI, web design, and marketing. I’m currently building my skills and love exploring how design can make digital experiences more engaging and impactful. As I learn and work on projects, I’m focused on blending creativity with usability to create designs that look great and connect with people. I’m passionate about designing with the user in mind and always striving to make each interaction seamless and enjoyable. Excited to keep learning, collaborate with others, and bring fresh ideas to the table that push the boundaries of design and innovation!
         </div>
-      
-      
-      
       </div>
       
-
       <div class="clear"></div>
     </div>
     

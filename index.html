@@ -1,9 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="eng-ca">
   <head>
-    <title>About Me</title>
+    <title> About Me </title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     
     <!--Header -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,27 +17,25 @@
     <style>
       body {
         background-color: #FFFDF7;
-        font-family: 'Noto Sans', sans-serif;
-        margin: 0;
-        padding: 0;
       }
 
       .container {
-        margin-left: 20px;
+        margin-left: 20px; 
         margin-top: 15px;
-        padding: 20px;
-        box-sizing: border-box;
+        height: 784px;
       }
 
       #content {
-        width: 100%;
-        max-width: 300px;
-        margin-left: 85px;
-        margin-top: 20px;
+        width: 25%;
+        height: 84.5%; 
+        display: block;
+        float: left;
+        clear: right;
         background-color: black;
+        margin-left: 85px; 
+        margin-top: 20px;
         color: white;
         padding: 15px;
-        text-align: center;
       }
 
       .fullwidth {
@@ -47,141 +44,193 @@
       }
 
       .portrait-img {
-        max-width: 100%;
+        max-width: 275px; 
         height: auto;
-        margin-bottom: 20px;
+        margin-bottom: 50px;
+        margin-right: 20px; 
       }
 
       .info-img {
-        max-width: 100%;
+        max-width: 350px; 
         height: auto;
-        margin: 0 auto;
+        display: block;
+        margin: 0 auto; 
       }
 
       .aboutmeheader {
-        width: 100%;
+        width: 53%;
+        height: 50px;
+        color: black;
         text-align: left;
+        padding: 20px;
+        float: left; 
         font-family: 'League Gothic', sans-serif;
         font-size: 70px;
-        margin-top: 0;
-        padding: 20px 0;
-        color: black;
+        margin-top: -15px; 
+        position: relative;
       }
 
       #blackline {
-        width: 100px;
+        width: 310px;
         height: 5px;
         background-color: black;
-        margin-top: 15px;
+        position: absolute;
+        top: 65%;
+        left: 100%;
+        margin-left: -300px;
       }
 
       .half-blocks {
-        width: 100%;
-        display: flex;
-        gap: 20px;
-        justify-content: space-between;
-        flex-wrap: wrap;
+        width: 57%;
+        float: left;
+        margin-top: 20px;
+        margin-left: 24px;
       }
 
       .half-block {
-        width: 48%;
+        width: 45%;
+        float: left;
+        margin-right: 10px;
         background-color: #ECE9E3;
         height: 270px;
         padding: 10px;
+        font-family: 'Noto Sans', sans-serif;
         font-size: 20px;
         font-weight: bold;
       }
 
-      .half-block img {
-        max-width: 100%;
-        height: auto;
-        margin-top: 35px;
-      }
-
       #right-block {
-        width: 100%;
+        width: 53%;
+        float: left;
         background-color: #ECE9E3;
         margin-top: 20px;
+        margin-left: 24px;
         height: 287px;
         padding: 10px;
-        font-weight: bold;
+        font-family: 'Noto Sans', sans-serif;
+        font-size: 20px;
+        font-weight: bold; 
+      }
+
+      .half-block img {
+        max-width: 95%; 
+        height: auto; 
+        margin-top: 35px; 
+        margin-left: 5px;
       }
 
       .clear {
         clear: both;
       }
-
-      table {
-        width: 100%;
-        border-collapse: collapse;
-      }
-
-      td, th {
-        font-weight: 350;
+      
+      td, tr {
+        font-weight: 350; 
         font-size: 13px;
         border: 1.5px solid black;
-        padding: 10px;
       }
-
+      
       th {
-        text-align: left;
-        background-color: #f2f2f2;
+        border: 1.5px solid black;
       }
-
+      
+      table {
+        border-collapse: collapse;
+      }
+      
       .bodytext {
+        margin-top: 20px;
+        font-family: 'Noto Sans', sans-serif;
         font-size: 15px;
         line-height: 30px;
+        font-weight: 350; 
       }
-
+      
       header {
         width: 100%;
         position: relative;
-        margin: 0 auto;
-        text-align: center;
+        margin: 0 auto;  
+        text-align: center;  
         padding: 1px;
+      }
+      
+      .attributes{
+        list-style: none;
+        margin-top: -90px;
+        margin-left: 140px;
+        margin-bottom: 0px; 
+        padding: 15;
+        line-height: 65px;
+        font-family: 'League Gothic', sans-serif;
+        font-size: 35px; 
+        color: #FFFDF7
       }
 
       nav ul {
         margin: 0;
         padding: 0;
-        list-style: none;
+        list-style: none; 
       }
 
       nav li {
-        display: inline-block;
-        margin-right: 20px;
+        display: inline-block; 
+        margin-right: 20px; 
       }
 
       nav a {
         color: black;
         text-decoration: none;
+        font-family: 'Noto Sans', sans-serif;
         display: block;
         text-align: center;
       }
 
       nav a:hover,
       nav a:active {
-        color: #808080;
+        color: #808080; 
+      }
+      
+      .info {
+        display: block;
+        max-width: 100%; 
       }
 
+      /* Contact Section */
       .w3-container {
         max-width: 800px;
-        margin: 50px auto;
-        text-align: center;
+        margin-left: 350px;
+     position: relative;
+          top: 50px;
       }
-
+      
+      .w3-row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+      
+      .w3-col {
+        flex: 1;
+        margin-bottom: 20px;
+      }
+      
+      .w3-center {
+  text-align: left;
+  position: relative;
+    right: 130px;
+}
+      
       .w3-button {
         background-color: black;
         color: white;
+        border: none;
         padding: 10px 20px;
         cursor: pointer;
-        border: none;
       }
-
+      
       .w3-button:hover {
         background-color: #333;
       }
-
+      
       .w3-input {
         width: 100%;
         padding: 10px;
@@ -189,68 +238,10 @@
         border: 1px solid #ccc;
         border-radius: 4px;
       }
-
-      /* Mobile and tablet-specific adjustments */
-      @media (max-width: 768px) {
-        .aboutmeheader {
-          font-size: 40px; /* Adjust font size only for mobile */
-        }
-
-        .half-blocks {
-          flex-direction: column; /* Stack blocks vertically */
-        }
-
-        .half-block {
-          width: 100%; /* Ensure blocks take full width on mobile */
-        }
-
-        .half-block img {
-          max-width: 90%; /* Adjust image size for mobile */
-        }
-
-        #right-block {
-          height: auto; /* Allow the right block to expand vertically */
-        }
-
-        table {
-          font-size: 12px; /* Smaller table font size for mobile */
-        }
-
-        td, th {
-          padding: 8px;
-        }
-
-        #content {
-          margin-left: 0; /* Remove margin from content */
-        }
-
-        .clear {
-          clear: both;
-        }
-      }
-      
-      /* For very small devices like phones (max-width: 480px) */
-      @media (max-width: 480px) {
-        .aboutmeheader {
-          font-size: 30px; /* Further reduce font size */
-        }
-
-        .half-block {
-          width: 100%; /* Full width on smaller screens */
-        }
-
-        #right-block {
-          height: auto;
-        }
-
-        .bodytext {
-          font-size: 14px;
-          line-height: 25px;
-        }
-      }
     </style>
   </head>
   <body>
+    
     <header>
       <nav>
         <ul>
@@ -262,15 +253,16 @@
         </ul>
       </nav>
     </header>
-
+    
     <div class="container">
-      <div id="content">
+     
+      <div id="content"> 
         <div class="fullwidth">
           <img src="face.png" alt="circular portrait" class="portrait-img">
           <img src="PersonalInfo.png" alt="personal information" class="info-img">
         </div>
       </div>
-
+      
       <div class="aboutmeheader">ABOUT ME AS A DESIGNER
         <div id="blackline"></div>
       </div>
@@ -281,7 +273,7 @@
         </div>
         <div class="half-block">
           SKILLS
-          <table cellpadding="10" cellspacing="0">
+          <table cellpadding="10" cellspacing="0" style="width:100%; margin-top: 20px;">
             <tr>
               <th>SKILL</th>
               <th>PROFICIENCY</th>
@@ -308,22 +300,37 @@
 
       <div id="right-block">JENNY SOUTH
         <div class="bodytext">
-          Hi! I’m a student designer with a focus on UX/UI, web design, and marketing. I’m currently building my skills and love exploring how design can make digital experiences more engaging and impactful. I’m passionate about designing with the user in mind and always striving to make each interaction seamless and enjoyable. Excited to keep learning, collaborate with others, and bring fresh ideas to the table that push the boundaries of design and innovation!
+          Hi! I’m a student designer with a focus on UX/UI, web design, and marketing. I’m currently building my skills and love exploring how design can make digital experiences more engaging and impactful. As I learn and work on projects, I’m focused on blending creativity with usability to create designs that look great and connect with people. I’m passionate about designing with the user in mind and always striving to make each interaction seamless and enjoyable. Excited to keep learning, collaborate with others, and bring fresh ideas to the table that push the boundaries of design and innovation!
+        </div>
+      </div>
+      
+      <!-- Contact Section -->
+      
+      <!--
+Code copied from: [https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_band&stacked=h]
+Author: W3 Schools
+Name: Responsive Web Design
+Description: taught in one of the demos provided in the week 10 lectures. It showed how to make a contact page. 
+Date retrieved: November 14, 2024
+-->
+      <div class="w3-container w3-content" style="max-width:800px, margin-top:150px" id="contact" >
+        <p class="w3-center" style="font-family: 'Noto Sans', sans-serif;">Want to Collaborate?</p>
+        <div class="w3-row w3-padding-32">
+          <div class="w3-col m6 w3-large w3-margin-bottom">
+            <form>
+              <input class="w3-input" type="text" placeholder="Name" required>
+              <input class="w3-input" type="email" placeholder="Email" required>
+              <textarea class="w3-input" placeholder="Message" required></textarea>
+              <button type="submit" class="w3-button w3-block w3-black">SEND MESSAGE</button>
+            </form>
+          </div>
         </div>
       </div>
 
-      <!-- Contact Section -->
-      <div class="clear">
-        <div class="w3-container">
-          <h2>Contact Me</h2>
-          <form action="submit_form.php" method="post">
-            <input type="text" class="w3-input" placeholder="Name" required>
-            <input type="email" class="w3-input" placeholder="Email" required>
-            <textarea class="w3-input" placeholder="Message" rows="5" required></textarea>
-            <button type="submit" class="w3-button">Submit</button>
-          </form>
-        </div>
-      </div>
+      <div class="clear"></div>
     </div>
   </body>
 </html>
+
+
+

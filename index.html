@@ -33,7 +33,7 @@
         clear: right;
         background-color: black;
         margin-left: 85px; 
-        margin-top: 20px;
+        margin-top: 55px;
         color: white;
         padding: 15px;
         box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
@@ -68,7 +68,7 @@
         float: left; 
         font-family: 'League Gothic', sans-serif;
         font-size: 70px;
-        margin-top: -15px; 
+        margin-top: 20px; 
         position: relative;
         
       }
@@ -151,13 +151,17 @@
         font-weight: 350; 
       }
       
-      header {
-        width: 100%;
-        position: relative;
-        margin: 0 auto;  
-        text-align: center;  
-        padding: 1px;
-      }
+          header {
+  width: 100%;
+  position: fixed; 
+  top: 0;
+  left: 0;
+  z-index: 1000; 
+  text-align: center;
+  padding: 20px 0;
+  background-color: rgba(255, 253, 247, 0.9); 
+}
+
       
       .attributes{
         list-style: none;
@@ -195,10 +199,6 @@
         color: #808080; 
       }
       
-      .info {
-        display: block;
-        max-width: 100%; 
-      }
 
       /* Contact Section */
       .w3-container {
